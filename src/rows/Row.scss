@@ -1,0 +1,23 @@
+.row {
+	&__posters {
+		display: flex;
+		overflow-y: hidden;
+	}
+
+	&__poster {
+		margin-right: .625rem;
+		cursor: pointer;
+		&_img {
+			width: 100%;
+			object-fit: contain;
+			max-height: 6.25rem;
+			transition: transform .5s;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+		&_large {
+			max-height: 18.75rem;
+		}
+	}
+}
